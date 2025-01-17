@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pase_de_lista/profile.dart';
-import 'code.dart';
 
 void main() {
   runApp(const PaseDeLista());
@@ -14,11 +13,12 @@ class PaseDeLista extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Pase de Lista',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyanAccent),
         useMaterial3: true,
       ),
-      home: const ProfilePage(title: 'Federico Gtz aka Tiocosa11'),
+      home: const ProfilePage(title: 'Pase de Lista'),
     );
   }
 }
